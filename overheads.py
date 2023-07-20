@@ -22,8 +22,9 @@ higest_overheads = []
 for item in overheads:
     higest_overheads.append(item[1])
 
-for item in overheads:
-    if item[1] == max(higest_overheads):
-        print(item)
+def overhead_function():
 
-
+    with open('summary.txt', 'w') as file:
+        for item in overheads:
+            if item[1] == max(higest_overheads):
+                file.write(f"[HIGHEST OVERHEAD] {item[0].upper()}: {item[1]}%")
