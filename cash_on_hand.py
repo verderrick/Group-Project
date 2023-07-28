@@ -32,6 +32,5 @@ def cash_on_hand():
 
     from overheads import overhead_function
     with open("summary_report.txt", mode = "a", encoding = "UTF-8") as file:
-        file.write("\n")
         for item in cash_deficit:
             file.write(f"[CASH DEFICIT] DAY: {item[0]}, AMOUNT: USD{item[1]}\n")

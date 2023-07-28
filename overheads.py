@@ -27,4 +27,4 @@ def overhead_function():
     with open('summary_report.txt', 'w') as file:
         for item in overheads:
             if item[1] == max(higest_overheads):
-                file.write(f"[HIGHEST OVERHEAD] {item[0].upper()}: {item[1]}%")
+                file.write(f"[HIGHEST OVERHEAD] {item[0].upper()}: {item[1]}%\n")
