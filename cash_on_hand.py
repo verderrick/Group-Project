@@ -78,4 +78,3 @@ def cash_on_hand():
             file.write(f"[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n")
             file.write(f"[HIGHEST CASH SURPLUS] DAY: {current_day[0]}, AMOUNT: USD{highest_increment}\n")
     
-hi
